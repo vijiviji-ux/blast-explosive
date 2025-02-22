@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url('static/image/R.jpg'); /* Replace 'background.jpg' with your image path */
+            background-size: center;
+            background-position: cover;
+            animation: fadeIn 1s ease-in-out;
+            color: #1a0606;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>The substance is predicted to be: {{ result }}</p>
+</body>
+</html>
